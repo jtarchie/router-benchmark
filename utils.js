@@ -1,6 +1,6 @@
 'use strict'
 
-const chalk = require('chalk')
+import chalk from 'chalk';
 
 const operations = 1000000
 
@@ -46,4 +46,4 @@ Queue.prototype.run = function run () {
   })
 }
 
-module.exports = { now, getOpsSec, print, title, Queue, operations }
+export { now, getOpsSec, print, title, Queue, operations };

@@ -1,7 +1,9 @@
 'use strict'
 
-const { title, now, print, operations } = require('../utils')
-const router = require('router')()
+import { title, now, print, operations } from '../utils.js'
+import Router from 'router'
+
+const router = new Router()
 
 title('router benchmark (WARNING: includes handling)')
 

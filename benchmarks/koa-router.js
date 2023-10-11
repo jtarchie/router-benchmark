@@ -1,7 +1,7 @@
 'use strict'
 
-const { title, now, print, operations } = require('../utils')
-const KoaRouter = require('koa-router')
+import { title, now, print, operations } from '../utils.js'
+import KoaRouter from 'koa-router'
 const router = new KoaRouter()
 
 title('koa-router benchmark')
@@ -18,7 +18,7 @@ const routes = [
   { method: 'GET', url: '/map/:location/events' },
   { method: 'GET', url: '/status' },
   { method: 'GET', url: '/very/deeply/nested/route/hello/there' },
-  { method: 'GET', url: '/static/*' }
+  { method: 'GET', url: '/static/(.*)' }
 ]
 
 function noop () {}

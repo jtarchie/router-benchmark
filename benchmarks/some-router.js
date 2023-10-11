@@ -1,11 +1,11 @@
 'use strict'
 
 import { title, now, print, operations } from '../utils.js'
-import Router from 'find-my-way';
+import { MethodRouter } from '@jtarchie/some-router'
 
-const router = new Router();
+const router = new MethodRouter();
 
-title('find-my-way benchmark')
+title('some-router benchmark')
 
 const routes = [
   { method: 'GET', url: '/user' },
@@ -16,13 +16,13 @@ const routes = [
   { method: 'GET', url: '/event/:id' },
   { method: 'GET', url: '/event/:id/comments' },
   { method: 'POST', url: '/event/:id/comment' },
-  { method: 'GET', url: '/map/:location/events' },
   { method: 'GET', url: '/status' },
   { method: 'GET', url: '/very/deeply/nested/route/hello/there' },
   { method: 'GET', url: '/static/*' }
 ]
 
-function noop () {}
+
+function noop() { }
 var i = 0
 var time = 0
 

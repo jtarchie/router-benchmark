@@ -1,7 +1,9 @@
 'use strict'
 
-const { title, now, print, operations } = require('../utils')
-const router = require('express/lib/router')()
+import { title, now, print, operations } from '../utils.js'
+import express from 'express'
+
+const router = express.Router()
 
 title('express benchmark (WARNING: includes handling)')
 

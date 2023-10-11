@@ -1,7 +1,9 @@
 'use strict'
 
-const { title, now, print, operations } = require('../utils')
-const router = require('koa-tree-router')()
+import { title, now, print, operations } from '../utils.js'
+import Router from 'koa-tree-router'
+
+const router = new Router()
 
 title('koa-tree-router benchmark')
 

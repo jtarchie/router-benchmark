@@ -1,8 +1,8 @@
 'use strict'
 
-const { fork } = require('child_process')
-const { resolve } = require('path')
-const { Queue } = require('./utils')
+import { fork } from 'child_process'
+import { resolve } from 'path'
+import { Queue } from './utils.js'
 
 const benchmarks = [
   'find-my-way.js',
@@ -13,6 +13,7 @@ const benchmarks = [
   'router.js',
   'routr.js',
   'server-router.js',
+  'some-router.js',
   'trek-router.js'
 ]
 

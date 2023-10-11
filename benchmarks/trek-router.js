@@ -1,7 +1,7 @@
 'use strict'
 
-const { title, now, print, operations } = require('../utils')
-const Router = require('trek-router')
+import { title, now, print, operations } from '../utils.js'
+import Router from 'trek-router'
 
 const router = new Router()
 
