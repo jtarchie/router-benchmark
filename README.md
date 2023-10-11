@@ -1,8 +1,10 @@
 # Router Benchmark
 
-Benchmark of the most commonly used http routers.
+HTTP routers play a pivotal role in backend development, directing incoming requests to the appropriate handlers. This repository provides a benchmark of the most commonly used HTTP routers to help developers make informed decisions.
 
-Tested routers:
+## Tested Routers
+
+For consistency, all links point to their respective GitHub repositories:
 
 - [find-my-way](https://github.com/delvedor/find-my-way)
 - [call](https://github.com/hapijs/call)
@@ -15,10 +17,7 @@ Tested routers:
 - [server-router](https://github.com/yoshuawuyts/server-router)
 - [trek-router](https://www.npmjs.com/package/trek-router)
 
-This benchmarks aims to test only http routers, so the method handling should be
-included.\
-Do you know other routers?
-[PR](https://github.com/delvedor/router-benchmark/pulls)! :D
+If you're aware of other routers not listed here, please submit a [PR](https://github.com/jtarchie/router-benchmark/pulls)!
 
 ## Usage
 
@@ -46,13 +45,9 @@ npm start
 | `server-router`   | &#10003;              | &#10003;   | &#10007;             | &#10007;            | &#10007;                       | &#10007;             |
 | `trek-router`     | &#10007;              | &#10007;   | &#10007;             | &#10007;            | &#10007;                       | &#10007;             |
 
-_Did you find incorrect data in the above table? Please send a pr!_
+## enchmarking Methodology
 
-<a name="how"></a>
-
-## How the benchmark is taken
-
-To emulate a real world situation every router registers the following routes:
+To emulate real-world scenarios, each router registers the following routes:
 
 ```javascript
 { method: 'GET', url: '/user' },
@@ -81,8 +76,7 @@ wildcard: { method: 'GET', url: '/static/index.html' }
 all together: all the above at the same time
 ```
 
-Every test is executed 1 million times, the time is taken with
-`process.hrtime()`, the final result is expressed in operations per second.
+Each test is executed 1 million times. We measure the time using process.hrtime(), and the final results are expressed in operations per second.
 
 ## License
 
