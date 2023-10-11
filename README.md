@@ -1,6 +1,8 @@
 # Router Benchmark
 
-HTTP routers play a pivotal role in backend development, directing incoming requests to the appropriate handlers. This repository provides a benchmark of the most commonly used HTTP routers to help developers make informed decisions.
+HTTP routers play a pivotal role in backend development, directing incoming
+requests to the appropriate handlers. This repository provides a benchmark of
+the most commonly used HTTP routers to help developers make informed decisions.
 
 ## Tested Routers
 
@@ -17,7 +19,8 @@ For consistency, all links point to their respective GitHub repositories:
 - [server-router](https://github.com/yoshuawuyts/server-router)
 - [trek-router](https://www.npmjs.com/package/trek-router)
 
-If you're aware of other routers not listed here, please submit a [PR](https://github.com/jtarchie/router-benchmark/pulls)!
+If you're aware of other routers not listed here, please submit a
+[PR](https://github.com/jtarchie/router-benchmark/pulls)!
 
 ## Usage
 
@@ -76,7 +79,8 @@ wildcard: { method: 'GET', url: '/static/index.html' }
 all together: all the above at the same time
 ```
 
-Each test is executed 1 million times. We measure the time using process.hrtime(), and the final results are expressed in operations per second.
+Each test is executed 1 million times. We measure the time using
+process.hrtime(), and the final results are expressed in operations per second.
 
 ## License
 
